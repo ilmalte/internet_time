@@ -1,10 +1,10 @@
-library beats;
+library internet_time;
 
 /// Package beats for all your Swatch Internet Time needs.
 ///
 /// http://en.wikipedia.org/wiki/Swatch_Internet_Time
 ///
-class Beats {
+class InternetTime {
   // Returns the current time in beats.
   int now() => fromTime(DateTime.now());
 

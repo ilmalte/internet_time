@@ -6,13 +6,13 @@ TODO: Add pubdev installation.
 
 ## Usage
 
-The package is very easy to use, you can find the methods you can call in the  `/lib/beats.dart` file.
+The package is very easy to use, you can find the methods you can call in the  `/lib/internet_time.dart` file.
 
 ```dart
-import 'package:beats/beats.dart';
+import 'package:internet_time/internet_time.dart';
 
 void main() {
-    final beats = Beats();
+    final beats = InternetTime();
     print(beats.nowString());
     print(beats
         .fromTime(DateTime.fromMicrosecondsSinceEpoch(1681193970 * 1000000)));
@@ -22,3 +22,4 @@ void main() {
 ## Additional information
 
 Time precision is missing. It might be nice to implement it.
+Inspired by [peterhellberg's golang package](https://github.com/peterhellberg/beats).
